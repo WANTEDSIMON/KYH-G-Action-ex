@@ -51,4 +51,21 @@ public class CalculatorTest
         
     }
 
+    [Fact]
+    public void TestDivide()
+    {
+        //Given
+        Calculator calc = new();
+        int a = 10;
+        int b = 2;
+        int expectedResult = 5;
+
+        //When
+        int result = calc.Divide(a, b);
+
+        //Then
+        Assert.Equal(expectedResult, result);
+        
+    }
+
 }
